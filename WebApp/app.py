@@ -8,7 +8,7 @@ import os
 
 import joblib 
 path=os.path.dirname("")
-pipe_lr = joblib.load(open("Models\\Model_saved.pkl","rb"))
+pipe_lr = joblib.load(open("Model_saved.pkl","rb"))
 from track_utils import create_page_visited_table,add_page_visited_details,view_all_page_visited_details,add_prediction_details,view_all_prediction_details,create_emotionclf_table
 
 def predict_emotions(docx):
