@@ -4,10 +4,11 @@ import plotly.express as px
 import pandas as pd 
 import numpy as np 
 from datetime import datetime
-
+import os
 
 import joblib 
-pipe_lr = joblib.load(open("Models\Model_saved.pkl","rb"))
+path=os.path.dirname("")
+pipe_lr = joblib.load(open("WebApp\Models\Model_saved.pkl","rb"))
 from track_utils import create_page_visited_table,add_page_visited_details,view_all_page_visited_details,add_prediction_details,view_all_prediction_details,create_emotionclf_table
 
 def predict_emotions(docx):
